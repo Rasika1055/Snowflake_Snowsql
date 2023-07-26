@@ -3,7 +3,7 @@ name: Git Action with Snowflake Workflow
 on:
   push:
     branches:
-      - main
+      - feature_rasika
 
 jobs:
   snowflake:
