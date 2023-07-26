@@ -1,0 +1,20 @@
+name: Git Action with Snowflake Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  snowflake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: snowsql/snowsql@v1
+        with:
+          account: hnb84681.us-east-1
+          user: Rasika
+          password: ${{ secrets.SNOWFLAKE_PASSWORD }}
+          database: PROD
+          warehouse: compute_wh
+          script: ./scripts/**
