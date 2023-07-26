@@ -9,8 +9,8 @@ jobs:
   snowflake:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
       - uses: actions/checkout@v2
-      - uses: Snowflake_Snowsql/Snowflake_Snowsql@v1
         with:
           account: hnb84681.us-east-1
           user: Rasika
