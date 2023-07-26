@@ -17,4 +17,4 @@ jobs:
           password: ${{ secrets.SNOWFLAKE_PASSWORD }}
           database: PROD
           warehouse: compute_wh
-          script: ./scripts/**
+          script: scripts/R__SnowSQL.Sql
