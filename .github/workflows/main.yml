@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: snowsql/snowsql@v1
+      - uses: Snowflake_Snowsql/snowsql@v1
         with:
           account: hnb84681.us-east-1
           user: Rasika
